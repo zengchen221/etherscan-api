@@ -45,6 +45,8 @@ type NormalTx struct {
 	CumulativeGasUsed int     `json:"cumulativeGasUsed,string"`
 	GasUsed           int     `json:"gasUsed,string"`
 	Confirmations     int     `json:"confirmations,string"`
+	MethodId          string  `json:"methodId,string"`
+	FunctionName      string  `json:"functionName,string"`
 }
 
 // InternalTx holds info from internal tx query
@@ -174,4 +176,3 @@ type Log struct {
 	LogIndex        string   `json:"logIndex"`
 	Removed         bool     `json:"removed"`
 }
-
